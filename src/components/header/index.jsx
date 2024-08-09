@@ -6,9 +6,9 @@ export function Header(){
       <header>
         <h1>Spotify recommended songs</h1>
         <ul>
-          <li>Home</li>
-          <li>Road</li>
-          <li>About</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Road</a></li>
+          <li><a href="/">About</a></li>
         </ul>
       </header>
     </Container>
