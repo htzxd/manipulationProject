@@ -70,7 +70,7 @@ export function Home(){
       </article>
 
       <aside>
-        <h2>Varied genres</h2>
+        <h2 id="any">Varied genres</h2>
 
         <div className="cardsAside">
           <img src={gomes} alt="photo brazilian singer" />
@@ -158,7 +158,11 @@ export function Home(){
       </section>
       </div>
     <footer>
-      <span>Developed by <strong>Marco Pereira</strong></span>
+      <span>Developed by 
+          <strong>
+            <a href="https://www.github.com/htzxd" target="_blank"> Marco Pereira</a>
+          </strong>
+        </span>
     </footer>
     </Container>
   )

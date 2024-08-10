@@ -21,6 +21,10 @@ export const Container = styled.div`
     margin-top: 1.8rem;
   }
 
+  .titleHighlights:hover, .pl:hover, #any:hover {
+    cursor: default;
+  }
+
   article {
     grid-area: A;
   }
@@ -37,12 +41,13 @@ export const Container = styled.div`
   
   .cards {
     display: flex;
-    padding: 1.2rem;
+    margin: 1.2rem;
   }
 
   .cardsAside {
     display: flex;
-    margin-top: 1.2rem;
+    margin-top: 1.8rem;
+    padding: 1.2rem;
 
     img {
       width: 4.8rem;
@@ -51,6 +56,11 @@ export const Container = styled.div`
 
   .cards, .cardsAside {
     padding: 1.2rem;
+  }
+
+  .cards:hover, .cardsAside:hover {
+    color: ${({ theme }) => theme.colors.text_hover};
+    cursor: pointer;
   }
   
   aside, article {
@@ -101,6 +111,11 @@ export const Container = styled.div`
     }
   }
 
+  .playlists:hover {
+    color: ${({ theme }) => theme.colors.text_hover};
+    cursor: pointer;
+  }
+
   footer {
     color: ${({ theme }) => theme.colors.text_primary};
 
@@ -109,10 +124,13 @@ export const Container = styled.div`
     right: 40%;
     left: 40%;
 
-    padding: 1.2rem;
-
     span {
       font-style: italic;
+    }
+
+    a {
+      color: ${({ theme }) => theme.colors.text_hover};
+      text-decoration: none;
     }
   }
 `
