@@ -6,11 +6,13 @@ export const Container = styled.div`
     grid-template-areas:
     "C C B"
     "A A B"
-    "A A B";
+    "A A B"
+    "D D D"
+    "E E E";
     gap: 1.2rem;
   }
   
-  #titleHighlights {
+  .titleHighlights {
     grid-area: C;
     font-style: italic;
     font-size: 3.2rem;
@@ -57,5 +59,37 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 1.8rem;
+  }
+
+  .pl {
+    color: ${({ theme }) => theme.colors.text_primary};
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 400;
+
+    grid-area: D;
+  }
+
+  section {
+    background-color: ${({ theme }) => theme.colors.bg_secondary};
+    height: 22rem;
+    border-radius: .8rem;
+    
+    grid-area: E;
+  }
+
+  footer {
+    color: ${({ theme }) => theme.colors.text_primary};
+
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    left: 40%;
+
+    padding: 1.2rem;
+
+    span {
+      font-style: italic;
+    }
   }
 `

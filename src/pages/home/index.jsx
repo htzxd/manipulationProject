@@ -15,7 +15,7 @@ export function Home(){
       <Header />
       
       <div className="container">
-      <h2 id="titleHighlights">
+      <h2 className="titleHighlights">
          Highlights of the Week
         </h2> 
       <article>
@@ -105,7 +105,19 @@ export function Home(){
           </div>
         </div>
       </aside>
+
+      <h2 className="pl">
+        Playlists
+      </h2>
+
+      <section>
+        
+      </section>
       </div>
+
+      <footer>
+        <span>Developed by <strong>Marco Pereira</strong></span>
+      </footer>
     </Container>
   )
 }
