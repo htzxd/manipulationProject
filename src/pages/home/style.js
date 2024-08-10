@@ -43,6 +43,10 @@ export const Container = styled.div`
   .cardsAside {
     display: flex;
     margin-top: 1.2rem;
+
+    img {
+      width: 4.8rem;
+    }
   }
 
   .cards, .cardsAside {
@@ -63,7 +67,7 @@ export const Container = styled.div`
 
   .pl {
     color: ${({ theme }) => theme.colors.text_primary};
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-style: italic;
     font-weight: 400;
 
@@ -72,10 +76,29 @@ export const Container = styled.div`
 
   section {
     background-color: ${({ theme }) => theme.colors.bg_secondary};
-    height: 22rem;
     border-radius: .8rem;
     
+    display: grid;
     grid-area: E;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .playlists {
+    margin: 1.2rem;
+    text-align: center;
+    color: ${({ theme }) => theme.colors.text_primary};
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      max-height: 13rem;
+      border-radius: .8rem;
+      object-fit: cover;
+    }
+
+    h3 {
+      line-height: 150%;
+    }
   }
 
   footer {

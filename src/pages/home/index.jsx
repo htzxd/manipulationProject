@@ -1,5 +1,6 @@
 import { Container } from "./style";
 import { Header } from "../../components/header";
+
 import altJ from '../../assets/alt-j.png';
 import arcticMonkeys from '../../assets/arcticMonkeys.png';
 import gomes from '../../assets/gomes.png';
@@ -7,6 +8,12 @@ import adelle from '../../assets/adelle.png';
 import pompeo from '../../assets/pompeo.png';
 import matue from '../../assets/matue.png';
 import carlos from '../../assets/luccasCarlos.png'
+import travis from '../../assets/travis.png'
+import marilia from '../../assets/marilia.png'
+import kanye from '../../assets/kanye.png'
+import luan from '../../assets/luan.png'
+import puma from '../../assets/puma.png'
+import major from '../../assets/major-rd.png'
 
 
 export function Home(){
@@ -112,12 +119,47 @@ export function Home(){
 
       <section>
         
+        <div className="playlists">
+          <img src={travis} alt="" />
+          <h3>Travis Scott</h3>
+          <p>This is Travis Scott</p>
+        </div>
+
+        <div className="playlists">
+          <img src={marilia} alt="" />
+          <h3>Marilia Mendonça</h3>
+          <p>This is Marilia Mendonça</p>
+        </div>
+
+        <div className="playlists">
+          <img src={major} alt="" />
+          <h3>Major RD</h3>
+          <p>This is Major RD</p>
+        </div>
+
+        <div className="playlists">
+          <img src={kanye} alt="" />
+          <h3>Kanye West</h3>
+          <p>This is Kanye West</p>
+        </div>
+
+        <div className="playlists">
+          <img src={luan} alt="" />
+          <h3>Luan Santana</h3>
+          <p>This is Luan Santana</p>
+        </div>
+
+        <div className="playlists">
+          <img src={puma} alt="" />
+          <h3>Puma PJL</h3>
+          <p>This is Puma PJL</p>
+        </div>
+       
       </section>
       </div>
-
-      <footer>
-        <span>Developed by <strong>Marco Pereira</strong></span>
-      </footer>
+    <footer>
+      <span>Developed by <strong>Marco Pereira</strong></span>
+    </footer>
     </Container>
   )
 }
