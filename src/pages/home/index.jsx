@@ -9,12 +9,12 @@ export function Home(){
   return (
     <Container>
       <Header />
+      
       <div className="container">
-      <article>
-        <h2>
+      <h2 id="titleHighlights">
          Highlights of the Week
-        </h2>
-
+        </h2> 
+      <article>
         <div className="mainCard">
           <div className="cards">
             <img src={altJ} alt="" />
@@ -28,7 +28,7 @@ export function Home(){
             <img src={arcticMonkeys} alt="" />
             <div className="textCardArt">
               <p>#2 music</p>
-              <h2>Do i wanna know ?</h2>
+              <h2>Do i wanna know ? - ArcticMonkeys</h2>
             </div>
           </div>
           
@@ -36,7 +36,7 @@ export function Home(){
             <img src={arcticMonkeys} alt="" />
             <div className="textCardArt">
               <p>#3 music</p>
-              <h2>Wanna be yours</h2>
+              <h2>Wanna be yours - ArcticMonkeys</h2>
             </div>
           </div>
         </div>
