@@ -13,6 +13,7 @@ export default createGlobalStyle`
 
   body {
     background-color: ${({ theme }) => theme.colors.bg_color};
+    margin-inline: 1.2rem;
   }
 
   body, button, input, a {
