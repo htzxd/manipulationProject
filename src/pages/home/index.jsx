@@ -2,7 +2,11 @@ import { Container } from "./style";
 import { Header } from "../../components/header";
 import altJ from '../../assets/alt-j.png';
 import arcticMonkeys from '../../assets/arcticMonkeys.png';
-import gomes from '../../assets/gomes.png'
+import gomes from '../../assets/gomes.png';
+import adelle from '../../assets/adelle.png';
+import pompeo from '../../assets/pompeo.png';
+import matue from '../../assets/matue.png';
+import carlos from '../../assets/luccasCarlos.png'
 
 
 export function Home(){
@@ -39,6 +43,22 @@ export function Home(){
               <h2>Wanna be yours - ArcticMonkeys</h2>
             </div>
           </div>
+          
+          <div className="cards">
+            <img src={arcticMonkeys} alt="" />
+            <div className="textCardArt">
+              <p>#4 music</p>
+              <h2>Wanna be yours - ArcticMonkeys</h2>
+            </div>
+          </div>
+          
+          <div className="cards">
+            <img src={arcticMonkeys} alt="" />
+            <div className="textCardArt">
+              <p>#5 music</p>
+              <h2>Wanna be yours - ArcticMonkeys</h2>
+            </div>
+          </div>
         </div>
       </article>
 
@@ -47,8 +67,42 @@ export function Home(){
 
         <div className="cardsAside">
           <img src={gomes} alt="photo brazilian singer" />
-          <h3>Joao Gomes</h3>
-          <p>Vaquejada</p>
+          <div className="textCardArt">
+            <h3>Joao Gomes</h3>
+            <p>Vaquejada</p>
+          </div>
+        </div>
+        
+        <div className="cardsAside">
+          <img src={pompeo} alt="photo brazilian singer" />
+          <div className="textCardArt">
+            <h3>Isadora Pompeo</h3>
+            <p>De dentro pra fora</p>
+          </div>
+        </div>
+        
+        <div className="cardsAside">
+          <img src={matue} alt="photo brazilian singer" />
+          <div className="textCardArt">
+            <h3>Matuê</h3>
+            <p>A morte do auto-tune</p>
+          </div>
+        </div>
+        
+        <div className="cardsAside">
+          <img src={adelle} alt="photo brazilian singer" />
+          <div className="textCardArt">
+            <h3>Adelle</h3>
+            <p>I can't love you in the dark</p>
+          </div>
+        </div>
+        
+        <div className="cardsAside">
+          <img src={carlos} alt="photo brazilian singer" />
+          <div className="textCardArt">
+            <h3>Luccas Carlos</h3>
+            <p>Sem ninguém</p>
+          </div>
         </div>
       </aside>
       </div>

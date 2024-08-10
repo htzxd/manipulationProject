@@ -27,7 +27,24 @@ export const Container = styled.div`
     grid-area: B;
     margin-top: 1.2rem;
     padding: 1.2rem;
-    text-align: center;
+    
+    h2 {
+      text-align: center;
+    }
+  }
+  
+  .cards {
+    display: flex;
+    padding: 1.2rem;
+  }
+
+  .cardsAside {
+    display: flex;
+    margin-top: 1.2rem;
+  }
+
+  .cards, .cardsAside {
+    padding: 1.2rem;
   }
   
   aside, article {
@@ -36,14 +53,9 @@ export const Container = styled.div`
     border-radius: .8rem;
   }
 
-  .cards {
-    display: flex;
-    padding: 1.2rem;
-  }
-
   .textCardArt {
     display: flex;
     flex-direction: column;
-    margin-left: 1.2rem;
+    margin-left: 1.8rem;
   }
 `
