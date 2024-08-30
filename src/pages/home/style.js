@@ -115,22 +115,4 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.colors.text_hover};
     cursor: pointer;
   }
-
-  footer {
-    color: ${({ theme }) => theme.colors.text_primary};
-
-    position: absolute;
-    bottom: 0;
-    right: 40%;
-    left: 40%;
-
-    span {
-      font-style: italic;
-    }
-
-    a {
-      color: ${({ theme }) => theme.colors.text_hover};
-      text-decoration: none;
-    }
-  }
 `

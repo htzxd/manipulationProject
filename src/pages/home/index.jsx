@@ -1,5 +1,6 @@
 import { Container } from "./style";
 import { Header } from "../../components/header";
+import { Footer } from "../../components/footer"
 
 import altJ from '../../assets/alt-j.png';
 import arcticMonkeys from '../../assets/arcticMonkeys.png';
@@ -157,13 +158,7 @@ export function Home(){
        
       </section>
       </div>
-    <footer>
-      <span>Developed by 
-          <strong>
-            <a href="https://www.github.com/htzxd" target="_blank"> Marco Pereira</a>
-          </strong>
-        </span>
-    </footer>
+      <Footer/>
     </Container>
   )
 }
