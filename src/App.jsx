@@ -1,14 +1,14 @@
 import GlobalStyle from './styles/global';
 import theme from './styles/theme';
 import { ThemeProvider } from 'styled-components';
-import { Home } from './pages/home';
+import { Profile } from './pages/profile';
 
 export function App(){
   return(
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-         <Home />
+         <Profile />
       </ThemeProvider>
     </div>
   )
