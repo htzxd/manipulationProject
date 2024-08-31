@@ -1,6 +1,6 @@
 import { Container } from "./style";
 import { Header } from "../../components/header";
-import { Footer } from "../../components/footer"
+import { Footer } from "../../components/footer";
 
 import altJ from '../../assets/alt-j.png';
 import arcticMonkeys from '../../assets/arcticMonkeys.png';
