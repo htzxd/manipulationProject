@@ -38,11 +38,6 @@ export const Container = styled.div`
       text-align: center;
     }
   }
-  
-  .cards {
-    display: flex;
-    margin: 1.2rem;
-  }
 
   .cardsAside {
     display: flex;
@@ -114,5 +109,20 @@ export const Container = styled.div`
   .playlists:hover {
     color: ${({ theme }) => theme.colors.text_hover};
     cursor: pointer;
+  }
+`
+
+export const Cards = styled.div`
+  display: flex;
+  margin: 1.2rem;
+`
+
+export const CardsAside = styled.div`
+  display: flex;
+  margin-top: 1.8rem;
+  padding: 1.2rem;
+
+  img {
+    width: 4.8rem;
   }
 `

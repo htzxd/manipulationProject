@@ -1,4 +1,4 @@
-import { Container } from "./style";
+import { Container, Cards, CardsAside } from "./style";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 
@@ -28,90 +28,91 @@ export function Home(){
         </h2> 
       <article>
         <div className="mainCard">
-          <div className="cards">
+          <Cards>
             <img src={altJ} alt="" />
             <div className="textCardArt">
               <p>#1 music</p>
               <h2>BreezeBlocks - J-Cloud</h2>
             </div>  
-          </div>
+          </Cards>
           
-          <div className="cards">
+          <Cards>
             <img src={arcticMonkeys} alt="" />
             <div className="textCardArt">
               <p>#2 music</p>
               <h2>Do i wanna know ? - ArcticMonkeys</h2>
             </div>
-          </div>
+          </Cards>
           
-          <div className="cards">
+          <Cards>
             <img src={arcticMonkeys} alt="" />
             <div className="textCardArt">
               <p>#3 music</p>
               <h2>Wanna be yours - ArcticMonkeys</h2>
             </div>
-          </div>
+          </Cards>
           
-          <div className="cards">
+          <Cards>
             <img src={arcticMonkeys} alt="" />
             <div className="textCardArt">
               <p>#4 music</p>
               <h2>Wanna be yours - ArcticMonkeys</h2>
             </div>
-          </div>
+          </Cards>
           
-          <div className="cards">
+          <Cards>
             <img src={arcticMonkeys} alt="" />
             <div className="textCardArt">
               <p>#5 music</p>
               <h2>Wanna be yours - ArcticMonkeys</h2>
             </div>
-          </div>
+          </Cards>
+
         </div>
       </article>
 
       <aside>
         <h2 id="any">Varied genres</h2>
 
-        <div className="cardsAside">
+        <CardsAside>
           <img src={gomes} alt="photo brazilian singer" />
           <div className="textCardArt">
             <h3>Joao Gomes</h3>
             <p>Vaquejada</p>
           </div>
-        </div>
+        </CardsAside>
         
-        <div className="cardsAside">
+        <CardsAside>
           <img src={pompeo} alt="photo brazilian singer" />
           <div className="textCardArt">
             <h3>Isadora Pompeo</h3>
             <p>De dentro pra fora</p>
           </div>
-        </div>
+        </CardsAside>
         
-        <div className="cardsAside">
+        <CardsAside>
           <img src={matue} alt="photo brazilian singer" />
           <div className="textCardArt">
             <h3>Matuê</h3>
             <p>A morte do auto-tune</p>
           </div>
-        </div>
+        </CardsAside>
         
-        <div className="cardsAside">
+        <CardsAside>
           <img src={adelle} alt="photo brazilian singer" />
           <div className="textCardArt">
             <h3>Adelle</h3>
             <p>I can't love you in the dark</p>
           </div>
-        </div>
+        </CardsAside>
         
-        <div className="cardsAside">
+        <CardsAside>
           <img src={carlos} alt="photo brazilian singer" />
           <div className="textCardArt">
             <h3>Luccas Carlos</h3>
             <p>Sem ninguém</p>
           </div>
-        </div>
+        </CardsAside>
       </aside>
 
       <h2 className="pl">
