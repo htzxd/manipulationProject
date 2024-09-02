@@ -4,7 +4,11 @@ export const Container = styled.div`
     margin: 1.2rem;
     text-align: center;
     color: ${({ theme }) => theme.colors.text_primary};
-    cursor: pointer;
+
+    :hover {
+      color: ${({ theme }) => theme.colors.text_hover};
+      cursor: pointer;
+    }
 
     img {
       width: 100%;
@@ -16,9 +20,4 @@ export const Container = styled.div`
     h3 {
       line-height: 150%;
     }
-
-  .playlists:hover {
-    color: ${({ theme }) => theme.colors.text_hover};
-    cursor: pointer;
-  }
 `

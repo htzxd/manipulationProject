@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 export function Profile(){
   return(
     <Container>
-      
         <Header/>
           <Primary>
             <Main>

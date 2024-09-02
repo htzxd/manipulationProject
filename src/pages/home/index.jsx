@@ -10,8 +10,7 @@ import { TitleHighlights } from "../../components/titleHighlights";
 export function Home(){
   return (
     <Container>
-      <Header />
-      
+      <Header />  
         <Main>
           <TitleHighlights/> 
           <article>
