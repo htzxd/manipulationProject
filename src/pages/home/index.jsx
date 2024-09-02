@@ -1,164 +1,53 @@
-import { Container, Cards, CardsAside } from "./style";
+import { Container, Main } from "./style";
+
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
-
-import altJ from '../../assets/alt-j.png';
-import arcticMonkeys from '../../assets/arcticMonkeys.png';
-import gomes from '../../assets/gomes.png';
-import adelle from '../../assets/adelle.png';
-import pompeo from '../../assets/pompeo.png';
-import matue from '../../assets/matue.png';
-import carlos from '../../assets/luccasCarlos.png'
-import travis from '../../assets/travis.png'
-import marilia from '../../assets/marilia.png'
-import kanye from '../../assets/kanye.png'
-import luan from '../../assets/luan.png'
-import puma from '../../assets/puma.png'
-import major from '../../assets/major-rd.png'
-
+import { Cards } from "../../components/cards";
+import { CardsAside } from "../../components/cardsAside";
+import { CardsPL } from "../../components/cardsPL";
+import { TitleHighlights } from "../../components/titleHighlights";
 
 export function Home(){
   return (
     <Container>
       <Header />
       
-      <div className="container">
-      <h2 className="titleHighlights">
-         Highlights of the Week
-        </h2> 
-      <article>
-        <div className="mainCard">
-          <Cards>
-            <img src={altJ} alt="" />
-            <div className="textCardArt">
-              <p>#1 music</p>
-              <h2>BreezeBlocks - J-Cloud</h2>
-            </div>  
-          </Cards>
-          
-          <Cards>
-            <img src={arcticMonkeys} alt="" />
-            <div className="textCardArt">
-              <p>#2 music</p>
-              <h2>Do i wanna know ? - ArcticMonkeys</h2>
-            </div>
-          </Cards>
-          
-          <Cards>
-            <img src={arcticMonkeys} alt="" />
-            <div className="textCardArt">
-              <p>#3 music</p>
-              <h2>Wanna be yours - ArcticMonkeys</h2>
-            </div>
-          </Cards>
-          
-          <Cards>
-            <img src={arcticMonkeys} alt="" />
-            <div className="textCardArt">
-              <p>#4 music</p>
-              <h2>Wanna be yours - ArcticMonkeys</h2>
-            </div>
-          </Cards>
-          
-          <Cards>
-            <img src={arcticMonkeys} alt="" />
-            <div className="textCardArt">
-              <p>#5 music</p>
-              <h2>Wanna be yours - ArcticMonkeys</h2>
-            </div>
-          </Cards>
+        <Main>
+          <TitleHighlights/> 
+          <article>
+              <Cards/>
+              <Cards/>
+              <Cards/>
+              <Cards/>
+              <Cards/>
+          </article>
 
-        </div>
-      </article>
+          <aside>
+            <h2 id="any">Varied genres</h2>
 
-      <aside>
-        <h2 id="any">Varied genres</h2>
+            <CardsAside/>
+            <CardsAside/>
+            <CardsAside/>
+            <CardsAside/>
+            <CardsAside/>
+              
+          </aside>
 
-        <CardsAside>
-          <img src={gomes} alt="photo brazilian singer" />
-          <div className="textCardArt">
-            <h3>Joao Gomes</h3>
-            <p>Vaquejada</p>
-          </div>
-        </CardsAside>
-        
-        <CardsAside>
-          <img src={pompeo} alt="photo brazilian singer" />
-          <div className="textCardArt">
-            <h3>Isadora Pompeo</h3>
-            <p>De dentro pra fora</p>
-          </div>
-        </CardsAside>
-        
-        <CardsAside>
-          <img src={matue} alt="photo brazilian singer" />
-          <div className="textCardArt">
-            <h3>Matuê</h3>
-            <p>A morte do auto-tune</p>
-          </div>
-        </CardsAside>
-        
-        <CardsAside>
-          <img src={adelle} alt="photo brazilian singer" />
-          <div className="textCardArt">
-            <h3>Adelle</h3>
-            <p>I can't love you in the dark</p>
-          </div>
-        </CardsAside>
-        
-        <CardsAside>
-          <img src={carlos} alt="photo brazilian singer" />
-          <div className="textCardArt">
-            <h3>Luccas Carlos</h3>
-            <p>Sem ninguém</p>
-          </div>
-        </CardsAside>
-      </aside>
+          <h2 className="pl">
+            Playlists
+          </h2>
 
-      <h2 className="pl">
-        Playlists
-      </h2>
+          <section>
+            
+            <CardsPL/>
+            <CardsPL/>
+            <CardsPL/>
+            <CardsPL/>
+            <CardsPL/>
+            <CardsPL/>
 
-      <section>
-        
-        <div className="playlists">
-          <img src={travis} alt="" />
-          <h3>Travis Scott</h3>
-          <p>This is Travis Scott</p>
-        </div>
-
-        <div className="playlists">
-          <img src={marilia} alt="" />
-          <h3>Marilia Mendonça</h3>
-          <p>This is Marilia Mendonça</p>
-        </div>
-
-        <div className="playlists">
-          <img src={major} alt="" />
-          <h3>Major RD</h3>
-          <p>This is Major RD</p>
-        </div>
-
-        <div className="playlists">
-          <img src={kanye} alt="" />
-          <h3>Kanye West</h3>
-          <p>This is Kanye West</p>
-        </div>
-
-        <div className="playlists">
-          <img src={luan} alt="" />
-          <h3>Luan Santana</h3>
-          <p>This is Luan Santana</p>
-        </div>
-
-        <div className="playlists">
-          <img src={puma} alt="" />
-          <h3>Puma PJL</h3>
-          <p>This is Puma PJL</p>
-        </div>
-       
-      </section>
-      </div>
+          </section>
+        </Main>
       <Footer/>
     </Container>
   )

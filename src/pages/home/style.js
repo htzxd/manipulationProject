@@ -1,26 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  .container {
-    display: grid;
-    grid-template-areas:
-    "C C B"
-    "A A B"
-    "A A B"
-    "D D D"
-    "E E E";
-    gap: 1.2rem;
-  }
-  
-  .titleHighlights {
-    grid-area: C;
-    font-style: italic;
-    font-size: 3.2rem;
-    font-weight: 400;
-    color: ${({ theme }) => theme.colors.text_primary};
-    margin-top: 1.8rem;
-  }
-
   .titleHighlights:hover, .pl:hover, #any:hover {
     cursor: default;
   }
@@ -36,16 +16,6 @@ export const Container = styled.div`
     
     h2 {
       text-align: center;
-    }
-  }
-
-  .cardsAside {
-    display: flex;
-    margin-top: 1.8rem;
-    padding: 1.2rem;
-
-    img {
-      width: 4.8rem;
     }
   }
 
@@ -87,42 +57,17 @@ export const Container = styled.div`
     grid-area: E;
     grid-template-columns: repeat(6, 1fr);
   }
-
-  .playlists {
-    margin: 1.2rem;
-    text-align: center;
-    color: ${({ theme }) => theme.colors.text_primary};
-    cursor: pointer;
-
-    img {
-      width: 100%;
-      max-height: 13rem;
-      border-radius: .8rem;
-      object-fit: cover;
-    }
-
-    h3 {
-      line-height: 150%;
-    }
-  }
-
-  .playlists:hover {
-    color: ${({ theme }) => theme.colors.text_hover};
-    cursor: pointer;
-  }
 `
 
-export const Cards = styled.div`
-  display: flex;
-  margin: 1.2rem;
+export const Main = styled.div`
+  display: grid;
+  grid-template-areas:
+  "C C B"
+  "A A B"
+  "A A B"
+  "D D D"
+  "E E E";
+  gap: 1.2rem;
 `
 
-export const CardsAside = styled.div`
-  display: flex;
-  margin-top: 1.8rem;
-  padding: 1.2rem;
 
-  img {
-    width: 4.8rem;
-  }
-`
