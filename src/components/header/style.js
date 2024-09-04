@@ -10,14 +10,22 @@ export const Container = styled.div`
     align-items: center;
     max-height: 10rem;
   }
-  
-  h1 {
-    margin: 2.4rem 1.3rem;
-    font-size: 3.2rem;
-    font-weight: 600;
-    color: ${({ theme }) => theme.colors.text_hover};
-    cursor: default;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1.8rem;
+
+    h1 {
+      margin: 2.4rem 1.3rem;
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: ${({ theme }) => theme.colors.text_hover};
+      cursor: default;
+    }
   }
+  
+  
 
   ul {
     display: flex;
