@@ -1,10 +1,10 @@
-import { Container, Main, Aside, Primary } from "./style";
+import { Container, Main, Section, Primary, Aside } from "./style";
 
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
+import { CardsAside } from "../../components/cardsAside";
 
 import john from '../../assets/john.jpeg';
-import { Link } from "react-router-dom";
 
 export function Profile(){
   return(
@@ -13,13 +13,18 @@ export function Profile(){
           <Primary>
             <Main>
               <img src={john} alt="author portrait" />
-              <Link>John Lennon</Link>
+              <h2>John Lennon</h2>
             </Main>
 
-            <Aside>
-              <p>pilota o porsche, noovo pigente gerente ja mandou gang gang pilota o porsche gang gang gang ie ie 
-                te vi na rua e atirei skrrrrrr skrrrrrrrr yeye <span>monstrum in fronte, monstrum in animo </span>
+            <Section>
+              <p>John Winston Ono Lennon was an English singer, songwriter and musician. <br />
+                He gained worldwide fame as the founder, co-lead vocalist and rhythm guitarist of the Beatles. <br />
+                His work included music, writing, drawings and film.
               </p>
+            </Section>
+
+            <Aside>
+              <CardsAside/>
             </Aside>
           </Primary>
       <Footer/>

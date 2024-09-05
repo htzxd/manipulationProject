@@ -7,7 +7,8 @@ export const Container = styled.div`
 export const Primary = styled.div`
   display: grid;
   grid-template-areas: 
-  "A A B";
+  "A B C";
+  gap: 1.8rem;
   margin-block:1.2rem;
 `
 
@@ -27,18 +28,28 @@ export const Main = styled.div`
   }
 
   img {
-    max-height: 25rem;
+    max-height: 15rem;
     border-radius: 50%;
     object-fit: cover;
   }
 `
 
-export const Aside = styled.div`
-  grid-area: B;
-  place-content: center;
-  margin-inline: 2.4rem;
+export const Section = styled.div`
+  background: ${({ theme }) => theme.colors.bg_secondary};
+  color: ${({ theme }) => theme.colors.text_primary};
+  border-radius: .8rem;
 
-  p {
-    color: ${({ theme }) => theme.colors.text_primary};
-  }
+  font-size: 1.8rem;
+
+  place-content: center;
+  text-align: center;
+  grid-area: B;
+`
+
+export const Aside = styled.div`
+  background: ${({ theme }) => theme.colors.bg_secondary};
+  color: ${({ theme }) => theme.colors.text_primary};
+  border-radius: .8rem;
+
+  grid-area: C;
 `

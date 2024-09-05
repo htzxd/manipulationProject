@@ -3,7 +3,7 @@ import { Container } from "./style";
 export function TitleHighlights(){
   return(
     <Container>
-      <h2>Highlights Of the Week</h2>
+      <h2>Better Of the Week</h2>
     </Container>
   )
 }
