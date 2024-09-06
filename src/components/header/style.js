@@ -25,8 +25,6 @@ export const Container = styled.div`
     }
   }
   
-  
-
   ul {
     display: flex;
     margin: 1.4rem 1.8rem;
@@ -48,5 +46,24 @@ export const Container = styled.div`
 
   li, a {
     color: ${({ theme }) => theme.colors.text_primary};
+  }
+
+  @media (max-width: 728px){
+    .logo {
+
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  @media (max-width: 604px){
+    h1 {
+      display: none;
+    }
+
+    img {
+      max-height: 4rem;
+    }
   }
 `

@@ -20,4 +20,10 @@ export default createGlobalStyle`
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
   }
+
+  @media (max-width: 450px){
+    body, button, input, a {
+      font-size: 1.3rem;
+    }
+  }
 `

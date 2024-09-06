@@ -9,4 +9,10 @@ export const Container = styled.div`
   margin-top: 1.8rem;
 
   cursor: default;
+
+  @media (max-width: 700px){
+    text-align: center;
+    
+  }
+
 `

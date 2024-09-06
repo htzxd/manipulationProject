@@ -53,6 +53,16 @@ export const Main = styled.div`
   "D D D"
   "E E E";
   gap: 1.2rem;
+
+  @media (max-width: 786px){
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width : 700px){
+    display: flex;
+    flex-direction: column;
+  }
 `
-
-
