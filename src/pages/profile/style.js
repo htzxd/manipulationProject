@@ -10,6 +10,11 @@ export const Primary = styled.div`
   "A B C";
   gap: 1.8rem;
   margin-block:1.2rem;
+
+  @media (max-width: 728px){
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const Main = styled.div`
@@ -44,6 +49,18 @@ export const Section = styled.div`
   place-content: center;
   text-align: center;
   grid-area: B;
+
+  @media (max-width: 1050px){
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 728px){
+    padding: 1.2rem;
+  }
+
+  @media (max-width: 550px){
+    font-size: 1.2rem;
+  }
 `
 
 export const Aside = styled.div`
