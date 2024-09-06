@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  
+  p {
+    cursor: default;
+    max-width: 700px;
+  }
 `
 
 export const Primary = styled.div`
@@ -44,11 +47,11 @@ export const Section = styled.div`
   color: ${({ theme }) => theme.colors.text_primary};
   border-radius: .8rem;
 
-  font-size: 1.8rem;
-
   place-content: center;
-  text-align: center;
+
+  font-size: 1.8rem;
   grid-area: B;
+  
 
   @media (max-width: 1050px){
     font-size: 1.4rem;

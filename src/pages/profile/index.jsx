@@ -17,8 +17,8 @@ export function Profile(){
             </Main>
 
             <Section>
-              <p>John Winston Ono Lennon was an English singer, songwriter and musician. <br />
-                He gained worldwide fame as the founder, co-lead vocalist and rhythm guitarist of the Beatles. <br />
+              <p>John Winston Ono Lennon was an English singer, songwriter and musician. 
+                He gained worldwide fame as the founder, co-lead vocalist and rhythm guitarist of the Beatles. 
                 His work included music, writing, drawings and film.
               </p>
             </Section>
