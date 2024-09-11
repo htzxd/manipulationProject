@@ -1,13 +1,12 @@
 import { Container } from "./style";
-import altJ from '../../assets/alt-j.png';
 
-export function Cards(){
+export function Cards({ imageURL, paragraph, title }){
   return(
     <Container>
-      <img src={altJ} alt="" />
+      <img src={imageURL} alt="" />
       <div className="textCardArt">
-        <p>#1 music</p>
-        <h2>BreezeBlocks - J-Cloud</h2>
+        <p>{paragraph}</p>
+        <h2>{title}</h2>
       </div> 
     </Container>
   )

@@ -13,6 +13,7 @@ export const Container = styled.div`
     grid-area: B;
     margin-top: 1.2rem;
     padding: 1.2rem;
+    place-content: center;
     
     h2 {
       text-align: center;

@@ -11,7 +11,10 @@ export const Container = styled.div`
     }
 
     img {
-      width: 4.8rem;
+      width: 5rem;
+      border-radius: 8px;
+      overflow: hidden;
+      object-fit: cover;
     }
     
     h3, p {

@@ -1,13 +1,12 @@
 import { Container } from "./style"
-import matue from "../../assets/matue.png"
 
-export function CardsAside(){
+export function CardsAside({ imageURL, artist, music}){
   return(
     <Container>
-      <img src={matue} alt="photo brazilian singer" />
+      <img src={imageURL} alt="profile photo artist" />
       <div className="textCardArt">
-        <h3>Matuê</h3>
-        <p>A morte do auto-tune</p>
+        <h3>{artist}</h3>
+        <p>{music}</p>
       </div>
     </Container>
   )
