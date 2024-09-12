@@ -4,6 +4,7 @@ export const Container = styled.div`
     display: flex;
     margin-top: 1.8rem;
     padding: 1.2rem;
+    align-items: center;
 
     :hover{
       color: ${({ theme }) => theme.colors.text_hover};

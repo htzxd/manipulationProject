@@ -11,7 +11,6 @@ export function Header(){
           <h1>Spotify Recommended Songs</h1>
         </div>
         <ul>
-          <li><Link to="/roads">Road</Link></li>
           <li><Link to="/profile">About</Link></li>
           <li><Link to="/login">Login</Link></li>
         </ul>

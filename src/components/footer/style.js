@@ -23,6 +23,5 @@ export const Container = styled.footer`
 
   a {
     color: ${({ theme }) => theme.colors.text_hover};
-    text-decoration: none;
   }
 `

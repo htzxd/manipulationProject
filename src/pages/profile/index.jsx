@@ -24,7 +24,11 @@ export function Profile(){
             </Section>
 
             <Aside>
-              <CardsAside/>
+              <CardsAside
+              imageURL={john}
+              artist="John Lennon"
+              music="This is John Lennon"
+              />
             </Aside>
           </Primary>
       <Footer/>

@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const Primary = styled.div`
   display: grid;
+  
   grid-template-areas: 
   "A B C";
   gap: 1.8rem;
@@ -25,7 +26,7 @@ export const Main = styled.div`
   margin-top: 1.2rem;
   grid-area: A;
 
-  text-align: center;
+  place-content: center;
 
   a {
     display: block;
